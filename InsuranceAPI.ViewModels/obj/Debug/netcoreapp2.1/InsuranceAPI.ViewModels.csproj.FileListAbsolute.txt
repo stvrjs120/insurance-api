@@ -1,0 +1,9 @@
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.deps.json
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\obj\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.csprojAssemblyReference.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\obj\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.csproj.CoreCompileInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\obj\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.AssemblyInfoInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\obj\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.AssemblyInfo.cs
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\obj\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.ViewModels\obj\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.pdb

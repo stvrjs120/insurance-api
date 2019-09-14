@@ -4333,6 +4333,47 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "InsuranceAPI.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InsuranceAPI.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InsuranceAPI.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InsuranceAPI.Interfaces.dll": {}
+        }
+      },
+      "InsuranceAPI.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/InsuranceAPI.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InsuranceAPI.Models.dll": {}
+        }
+      },
+      "InsuranceAPI.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InsuranceAPI.Interfaces": "1.0.0",
+          "InsuranceAPI.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/InsuranceAPI.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InsuranceAPI.Repositories.dll": {}
+        }
       }
     }
   },
@@ -11787,10 +11828,27 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "InsuranceAPI.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../InsuranceAPI.Interfaces/InsuranceAPI.Interfaces.csproj",
+      "msbuildProject": "../InsuranceAPI.Interfaces/InsuranceAPI.Interfaces.csproj"
+    },
+    "InsuranceAPI.Models/1.0.0": {
+      "type": "project",
+      "path": "../InsuranceAPI.Models/InsuranceAPI.Models.csproj",
+      "msbuildProject": "../InsuranceAPI.Models/InsuranceAPI.Models.csproj"
+    },
+    "InsuranceAPI.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../InsuranceAPI.Repositories/InsuranceAPI.Repositories.csproj",
+      "msbuildProject": "../InsuranceAPI.Repositories/InsuranceAPI.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "InsuranceAPI.Models >= 1.0.0",
+      "InsuranceAPI.Repositories >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0"
@@ -11825,7 +11883,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
+              "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj"
+            },
+            "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj": {
+              "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

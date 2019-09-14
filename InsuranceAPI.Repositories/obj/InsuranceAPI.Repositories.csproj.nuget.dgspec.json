@@ -4,14 +4,70 @@
     "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj": {}
   },
   "projects": {
-    "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj": {
+    "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Interfaces\\InsuranceAPI.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj",
-        "projectName": "InsuranceAPI.Repositories",
-        "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj",
+        "projectUniqueName": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Interfaces\\InsuranceAPI.Interfaces.csproj",
+        "projectName": "InsuranceAPI.Interfaces",
+        "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Interfaces\\InsuranceAPI.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Extreme PC\\.nuget\\packages\\",
-        "outputPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\obj\\",
+        "outputPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Extreme PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
+                "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj",
+        "projectName": "InsuranceAPI.Models",
+        "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj",
+        "packagesPath": "C:\\Users\\Extreme PC\\.nuget\\packages\\",
+        "outputPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +97,73 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj",
+        "projectName": "InsuranceAPI.Repositories",
+        "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Extreme PC\\.nuget\\packages\\",
+        "outputPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Extreme PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Interfaces\\InsuranceAPI.Interfaces.csproj": {
+                "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Interfaces\\InsuranceAPI.Interfaces.csproj"
+              },
+              "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
+                "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

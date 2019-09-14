@@ -1,0 +1,9 @@
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.deps.json
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.csprojAssemblyReference.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.csproj.CoreCompileInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.AssemblyInfoInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.AssemblyInfo.cs
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.pdb

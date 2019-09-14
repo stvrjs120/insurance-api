@@ -1,0 +1,14 @@
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Repositories.deps.json
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Repositories.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.csproj.CoreCompileInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.AssemblyInfoInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.AssemblyInfo.cs
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.csprojAssemblyReference.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Repositories.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.csproj.CopyComplete
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.pdb

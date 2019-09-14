@@ -1,0 +1,12 @@
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.deps.json
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.csprojAssemblyReference.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.csproj.CoreCompileInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.AssemblyInfoInputs.cache
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.AssemblyInfo.cs
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.csproj.CopyComplete
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Interfaces\obj\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.pdb
