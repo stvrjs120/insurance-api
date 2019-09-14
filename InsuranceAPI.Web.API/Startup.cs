@@ -22,7 +22,7 @@ namespace InsuranceAPI.Web.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<ApplicationDBContext>(
-                options => options.UseSqlServer(_config.GetConnectionString("InsuranceDBConnection")));
+                options => options.UseSqlServer(_config.GetConnectionString("InsuranceDBConnection"), b => b.MigrationsAssembly("InsuranceAPI.Web.API")));
 
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
             services.AddScoped<IInsuranceRepository, SQLInsuranceRepository>();

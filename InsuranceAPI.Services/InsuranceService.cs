@@ -1,6 +1,5 @@
 ﻿using InsuranceAPI.Interfaces;
 using InsuranceAPI.Models;
-using InsuranceAPI.Repositories;
 using System.Collections.Generic;
 
 namespace InsuranceAPI.Services

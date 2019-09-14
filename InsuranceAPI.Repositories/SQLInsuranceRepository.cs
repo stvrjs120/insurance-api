@@ -16,17 +16,17 @@ namespace InsuranceAPI.Repositories
 
         public Insurance Create(Insurance insurance)
         {
-            context.Insurance.Add(insurance);
+            context.Insurances.Add(insurance);
             context.SaveChanges();
             return insurance;
         }
 
         public bool Delete(int id)
         {
-            Insurance insurance = context.Insurance.Find(id);
+            Insurance insurance = context.Insurances.Find(id);
             if (insurance != null)
             {
-                context.Insurance.Remove(insurance);
+                context.Insurances.Remove(insurance);
                 context.SaveChanges();
 
                 return true;
@@ -37,17 +37,17 @@ namespace InsuranceAPI.Repositories
 
         public IEnumerable<Insurance> List()
         {
-            return context.Insurance;
+            return context.Insurances;
         }
 
         public Insurance Read(int id)
         {
-            return context.Insurance.Find(id);
+            return context.Insurances.Find(id);
         }
 
         public bool Update(Insurance insuranceChanges)
         {
-            var insurance = context.Insurance.Attach(insuranceChanges);
+            var insurance = context.Insurances.Attach(insuranceChanges);
 
             if (insurance != null)
             {

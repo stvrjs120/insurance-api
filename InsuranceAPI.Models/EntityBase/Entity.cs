@@ -15,14 +15,15 @@ namespace InsuranceAPI.Models.EntityBase
         }
 
         [Required]
-        [Column(TypeName = "varchar(200)")]
+        [Column(TypeName = "varchar(50)")]
+        [MaxLength(50, ErrorMessage = "Name cannot exceed 50 characters")]
         public string Name { get; set; }
 
         private DateTime? createdDate;
         [DataType(DataType.DateTime)]
         public DateTime CreatedDate
         {
-            get { return createdDate ?? DateTime.UtcNow; }
+            get { return createdDate ?? DateTime.Now; }
             set { createdDate = value; }
         }
 
