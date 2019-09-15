@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.1": {
       "InsuranceAPI.Interfaces/1.0.0": {
         "dependencies": {
-          "InsuranceAPI.Models": "1.0.0"
+          "InsuranceAPI.Models": "1.0.0",
+          "InsuranceAPI.ViewModels": "1.0.0"
         },
         "runtime": {
           "InsuranceAPI.Interfaces.dll": {}
@@ -506,6 +507,14 @@
         "runtime": {
           "InsuranceAPI.Models.dll": {}
         }
+      },
+      "InsuranceAPI.ViewModels/1.0.0": {
+        "dependencies": {
+          "InsuranceAPI.Models": "1.0.0"
+        },
+        "runtime": {
+          "InsuranceAPI.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -887,6 +896,11 @@
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
     },
     "InsuranceAPI.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InsuranceAPI.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

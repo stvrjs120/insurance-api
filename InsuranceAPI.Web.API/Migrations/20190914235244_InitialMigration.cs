@@ -15,7 +15,7 @@ namespace InsuranceAPI.Web.API.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: false, defaultValue: new DateTime(2019, 9, 14, 17, 33, 39, 942, DateTimeKind.Local)),
+                    CreatedDate = table.Column<DateTime>(nullable: false, defaultValueSql: "GETDATE()"),
                     ModifiedDate = table.Column<DateTime>(nullable: true)
                 },
                 constraints: table =>
@@ -30,7 +30,7 @@ namespace InsuranceAPI.Web.API.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: false, defaultValue: new DateTime(2019, 9, 14, 17, 33, 39, 941, DateTimeKind.Local)),
+                    CreatedDate = table.Column<DateTime>(nullable: false, defaultValueSql: "GETDATE()"),
                     ModifiedDate = table.Column<DateTime>(nullable: true),
                     Description = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false),
                     Covering = table.Column<int>(nullable: false),

@@ -12,3 +12,5 @@ C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcore
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.csproj.CopyComplete
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.dll
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\obj\Debug\netcoreapp2.1\InsuranceAPI.Repositories.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Repositories\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.pdb

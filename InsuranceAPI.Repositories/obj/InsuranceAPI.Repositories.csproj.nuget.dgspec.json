@@ -32,6 +32,9 @@
             "projectReferences": {
               "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
                 "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj"
+              },
+              "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj": {
+                "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj"
               }
             }
           }
@@ -164,6 +167,62 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj",
+        "projectName": "InsuranceAPI.ViewModels",
+        "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Extreme PC\\.nuget\\packages\\",
+        "outputPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Extreme PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
+                "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

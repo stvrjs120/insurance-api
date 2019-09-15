@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using InsuranceAPI.Maps;
 
 namespace InsuranceAPI.Web.API
 {
@@ -25,7 +26,10 @@ namespace InsuranceAPI.Web.API
                 options => options.UseSqlServer(_config.GetConnectionString("InsuranceDBConnection"), b => b.MigrationsAssembly("InsuranceAPI.Web.API")));
 
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
-            services.AddScoped<IInsuranceRepository, SQLInsuranceRepository>();
+
+            services.AddScoped<IInsuranceRepository, MockInsuranceRepository>();
+            services.AddScoped<IInsuranceMap, InsuranceMap>();
+            services.AddScoped<ICustomerMap, CustomerMap>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

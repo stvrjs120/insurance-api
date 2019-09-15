@@ -18,11 +18,11 @@ namespace InsuranceAPI.Models.Context
         {
             modelBuilder.Entity<Insurance>()
                 .Property(i => i.CreatedDate)
-                .HasDefaultValue(DateTime.Now);
+                .HasDefaultValueSql("GETDATE()");
 
             modelBuilder.Entity<Customer>()
                 .Property(c => c.CreatedDate)
-                .HasDefaultValue(DateTime.Now);
+                .HasDefaultValueSql("GETDATE()");
 
             modelBuilder.Entity<CustomerInsurance>()
                 .HasKey(c => new { c.InsuranceID, c.CustomerID });

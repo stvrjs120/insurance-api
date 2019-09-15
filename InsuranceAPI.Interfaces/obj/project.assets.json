@@ -921,6 +921,19 @@
         "runtime": {
           "bin/placeholder/InsuranceAPI.Models.dll": {}
         }
+      },
+      "InsuranceAPI.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InsuranceAPI.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InsuranceAPI.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InsuranceAPI.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -3493,11 +3506,17 @@
       "type": "project",
       "path": "../InsuranceAPI.Models/InsuranceAPI.Models.csproj",
       "msbuildProject": "../InsuranceAPI.Models/InsuranceAPI.Models.csproj"
+    },
+    "InsuranceAPI.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../InsuranceAPI.ViewModels/InsuranceAPI.ViewModels.csproj",
+      "msbuildProject": "../InsuranceAPI.ViewModels/InsuranceAPI.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "InsuranceAPI.Models >= 1.0.0",
+      "InsuranceAPI.ViewModels >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -3533,6 +3552,9 @@
           "projectReferences": {
             "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj": {
               "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Models\\InsuranceAPI.Models.csproj"
+            },
+            "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj": {
+              "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.ViewModels\\InsuranceAPI.ViewModels.csproj"
             }
           }
         }

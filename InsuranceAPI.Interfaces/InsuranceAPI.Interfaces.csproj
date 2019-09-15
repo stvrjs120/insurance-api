@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InsuranceAPI.Models\InsuranceAPI.Models.csproj" />
+    <ProjectReference Include="..\InsuranceAPI.ViewModels\InsuranceAPI.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

@@ -27,7 +27,7 @@ namespace InsuranceAPI.Web.API.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2019, 9, 14, 17, 33, 39, 942, DateTimeKind.Local));
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<DateTime?>("ModifiedDate");
 
@@ -66,7 +66,7 @@ namespace InsuranceAPI.Web.API.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2019, 9, 14, 17, 33, 39, 941, DateTimeKind.Local));
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Description")
                         .IsRequired()

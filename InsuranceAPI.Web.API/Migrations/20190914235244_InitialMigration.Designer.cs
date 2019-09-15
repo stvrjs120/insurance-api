@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InsuranceAPI.Web.API.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20190914233340_InitialMigration")]
+    [Migration("20190914235244_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,7 +29,7 @@ namespace InsuranceAPI.Web.API.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2019, 9, 14, 17, 33, 39, 942, DateTimeKind.Local));
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<DateTime?>("ModifiedDate");
 
@@ -68,7 +68,7 @@ namespace InsuranceAPI.Web.API.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2019, 9, 14, 17, 33, 39, 941, DateTimeKind.Local));
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Description")
                         .IsRequired()

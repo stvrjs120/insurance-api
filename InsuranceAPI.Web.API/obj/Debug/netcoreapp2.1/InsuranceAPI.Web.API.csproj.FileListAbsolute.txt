@@ -19,3 +19,7 @@ C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Repositories.pdb
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.pdb
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\obj\Debug\netcoreapp2.1\InsuranceAPI.Web.API.csproj.CopyComplete
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.pdb

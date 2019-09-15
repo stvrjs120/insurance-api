@@ -7,3 +7,10 @@ C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\I
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.AssemblyInfo.cs
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.dll
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Interfaces.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Maps\obj\Debug\netcoreapp2.1\InsuranceAPI.Maps.csproj.CopyComplete
