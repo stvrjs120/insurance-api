@@ -50,9 +50,42 @@ namespace InsuranceAPI.Maps
             return customerService.AssignInsurance(customerId, insuranceId);
         }
 
+        public IEnumerable<CustomerInsuranceViewModel> ListCustomerInsurances(int customerId)
+        {
+            return DomainToViewModel(customerService.ListCustomerInsurances(customerId));
+        }
+
         public bool RemoveInsurance(int customerId, int insuranceId)
         {
             return customerService.RemoveInsurance(customerId, insuranceId);
+        }
+
+        private CustomerInsuranceViewModel DomainToViewModel(CustomerInsurance domain)
+        {
+            CustomerInsuranceViewModel model = new CustomerInsuranceViewModel();
+            model.insurance.id = domain.Insurance.Id;
+            model.insurance.name = domain.Insurance.Name;
+            model.insurance.description = domain.Insurance.Description;
+            model.insurance.coverageTime = domain.Insurance.CoverageTime;
+            model.insurance.covering = domain.Insurance.Covering;
+            model.insurance.riskLevel = domain.Insurance.RiskLevel;
+            model.insurance.validFrom = domain.Insurance.ValidFrom;
+            model.customerID = domain.CustomerID;
+            model.insuranceID = domain.InsuranceID;
+
+            return model;
+        }
+
+        private List<CustomerInsuranceViewModel> DomainToViewModel(IEnumerable<CustomerInsurance> domain)
+        {
+            List<CustomerInsuranceViewModel> model = new List<CustomerInsuranceViewModel>();
+
+            foreach (CustomerInsurance of in domain)
+            {
+                model.Add(DomainToViewModel(of));
+            }
+
+            return model;
         }
 
         private CustomerViewModel DomainToViewModel(Customer domain)

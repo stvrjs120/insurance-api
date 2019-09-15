@@ -9,6 +9,7 @@ namespace InsuranceAPI.ViewModels
     {
         public int id { get; set; }
         public string name { get; set; }
+        public int insuranceId { get; set; }
         public IList<CustomerInsurance> customerInsurances { get; set; }
     }
 }

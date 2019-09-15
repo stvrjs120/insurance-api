@@ -32,9 +32,9 @@ namespace InsuranceAPI.Web.API.Controllers
 
         // GET: api/Customers/5
         [HttpGet("{id}")]
-        public CustomerViewModel GetCustomer([FromRoute] int id)
+        public IEnumerable<CustomerInsuranceViewModel> GetCustomer([FromRoute] int id)
         {
-            return customerMap.Read(id);
+            return customerMap.ListCustomerInsurances(id);
         }
 
         // PUT: api/Customers/5
@@ -56,6 +56,11 @@ namespace InsuranceAPI.Web.API.Controllers
             try
             {
                 result = customerMap.Update(customer);
+
+                if (result)
+                {
+                    customerMap.AssignInsurance(customer.id, customer.insuranceId);
+                }
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -81,9 +86,14 @@ namespace InsuranceAPI.Web.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            customerMap.Create(customer);
+            var resultCustomer = customerMap.Create(customer);
 
-            return CreatedAtAction("GetCustomer", new { customer.id }, customer);
+            if (customer != null)
+            {
+                customerMap.AssignInsurance(resultCustomer.id, customer.insuranceId);
+            }
+
+            return CreatedAtAction("GetCustomer", new { resultCustomer.id }, resultCustomer);
         }
 
         // DELETE: api/Customers/5
@@ -104,7 +114,5 @@ namespace InsuranceAPI.Web.API.Controllers
 
             return Ok(result);
         }
-
-
     }
 }

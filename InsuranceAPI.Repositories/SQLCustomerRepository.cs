@@ -70,8 +70,8 @@ namespace InsuranceAPI.Repositories
 
             if (existingItems.Count == 0)
             {
-                Customer customer = context.Customers.Where(c => (c.Id == customerId)).Include(c => (c.CustomerInsurances)).First();
-                Insurance insurance = context.Insurances.Where(i => (i.Id == insuranceId)).First();
+                Customer customer = context.Customers.Where(c => (c.Id == customerId)).Include(c => (c.CustomerInsurances)).FirstOrDefault();
+                Insurance insurance = context.Insurances.Where(i => (i.Id == insuranceId)).FirstOrDefault();
 
                 if (customer != null && insurance != null)
                 {
@@ -89,6 +89,13 @@ namespace InsuranceAPI.Repositories
             }
 
             return false;
+        }
+
+        public IEnumerable<CustomerInsurance> ListCustomerInsurances(int customerId)
+        {
+            var customerInsurances = context.CustomerInsurances.Where(i => (i.CustomerID == customerId)).FirstOrDefault();
+
+            return null;
         }
 
         public bool RemoveInsurance(int customerId, int insuranceId)

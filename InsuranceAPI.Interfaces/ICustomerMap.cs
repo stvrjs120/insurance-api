@@ -14,6 +14,7 @@ namespace InsuranceAPI.Interfaces
         bool Delete(int id);
         List<CustomerViewModel> List();
         bool AssignInsurance(int customerId, int insuranceId);
+        IEnumerable<CustomerInsuranceViewModel> ListCustomerInsurances(int customerId);
         bool RemoveInsurance(int customerId, int insuranceId);
     }
 }

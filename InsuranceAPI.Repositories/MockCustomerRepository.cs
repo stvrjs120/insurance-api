@@ -166,5 +166,10 @@ namespace InsuranceAPI.Repositories
 
             return false;
         }
+
+        public IEnumerable<CustomerInsurance> ListCustomerInsurances(int customerId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

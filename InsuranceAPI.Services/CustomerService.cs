@@ -18,6 +18,11 @@ namespace InsuranceAPI.Services
             return repository.AssignInsurance(customerId, insuranceId);
         }
 
+        public IEnumerable<CustomerInsurance> ListCustomerInsurances(int customerId)
+        {
+            return repository.ListCustomerInsurances(customerId);
+        }
+
         public bool RemoveInsurance(int customerId, int insuranceId)
         {
             return repository.RemoveInsurance(customerId, insuranceId);

@@ -36,13 +36,17 @@ namespace InsuranceAPI.Web.API
                         (resolver as DefaultContractResolver).NamingStrategy = null;
                 });
 
-            services.AddScoped<IInsuranceRepository, MockInsuranceRepository>();
+            //services.AddScoped<IInsuranceRepository, MockInsuranceRepository>();
+            services.AddScoped<IInsuranceRepository, SQLInsuranceRepository>();
             services.AddScoped<IInsuranceService, InsuranceService>();
             services.AddScoped<IInsuranceMap, InsuranceMap>();
 
-            services.AddScoped<ICustomerRepository, MockCustomerRepository>();
+            //services.AddScoped<ICustomerRepository, MockCustomerRepository>();
+            services.AddScoped<ICustomerRepository, SQLCustomerRepository>();
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<ICustomerMap, CustomerMap>();
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,12 +56,12 @@ namespace InsuranceAPI.Web.API
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseHsts();
-            }
 
-            app.UseHttpsRedirection();
+            app.UseCors(options =>
+            options.WithOrigins("http://localhost:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+
             app.UseMvc();
         }
     }

@@ -11,6 +11,7 @@ namespace InsuranceAPI.Interfaces
         bool Delete(int id);
         IEnumerable<Customer> List();
         bool AssignInsurance(int customerId, int insuranceId);
+        IEnumerable<CustomerInsurance> ListCustomerInsurances(int customerId);
         bool RemoveInsurance(int customerId, int insuranceId);
     }
 }

@@ -5,7 +5,7 @@ namespace InsuranceAPI.Models.Enums
     public enum Covering
     {
         [Display(Name = "Terremoto")]
-        Terremoto,
+        Terremoto = 1,
         [Display(Name = "Incendio")]
         Incendio,
         [Display(Name = "Robo")]
