@@ -23,3 +23,5 @@ C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.ViewModels.pdb
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.dll
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Maps.pdb
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Services.dll
+C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Web.API\bin\Debug\netcoreapp2.1\InsuranceAPI.Services.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InsuranceAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,5 +9,6 @@ namespace InsuranceAPI.ViewModels
     {
         public int id { get; set; }
         public string name { get; set; }
+        public IList<CustomerInsurance> customerInsurances { get; set; }
     }
 }

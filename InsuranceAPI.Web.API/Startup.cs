@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using InsuranceAPI.Maps;
+using InsuranceAPI.Services;
+using Newtonsoft.Json.Serialization;
 
 namespace InsuranceAPI.Web.API
 {
@@ -25,10 +27,21 @@ namespace InsuranceAPI.Web.API
             services.AddDbContextPool<ApplicationDBContext>(
                 options => options.UseSqlServer(_config.GetConnectionString("InsuranceDBConnection"), b => b.MigrationsAssembly("InsuranceAPI.Web.API")));
 
-            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1)
+                .AddJsonOptions(options => {
+                    var resolver = options.SerializerSettings.ContractResolver;
+
+                    if (resolver != null)
+                        (resolver as DefaultContractResolver).NamingStrategy = null;
+                });
 
             services.AddScoped<IInsuranceRepository, MockInsuranceRepository>();
+            services.AddScoped<IInsuranceService, InsuranceService>();
             services.AddScoped<IInsuranceMap, InsuranceMap>();
+
+            services.AddScoped<ICustomerRepository, MockCustomerRepository>();
+            services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<ICustomerMap, CustomerMap>();
         }
 

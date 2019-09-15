@@ -9,7 +9,7 @@ namespace InsuranceAPI.Maps
 {
     public class CustomerMap : ICustomerMap
     {
-        private ICustomerService customerService;
+        private readonly ICustomerService customerService;
 
         public CustomerMap(ICustomerService service)
         {
@@ -60,6 +60,7 @@ namespace InsuranceAPI.Maps
             CustomerViewModel model = new CustomerViewModel();
             model.id = domain.Id;
             model.name = domain.Name;
+            model.customerInsurances = domain.CustomerInsurances;
 
             return model;
         }
@@ -82,6 +83,7 @@ namespace InsuranceAPI.Maps
 
             domain.Id = officeViewModel.id;
             domain.Name = officeViewModel.name;
+            domain.CustomerInsurances = officeViewModel.customerInsurances;
 
             return domain;
         }

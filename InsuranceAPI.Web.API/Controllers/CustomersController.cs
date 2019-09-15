@@ -32,21 +32,9 @@ namespace InsuranceAPI.Web.API.Controllers
 
         // GET: api/Customers/5
         [HttpGet("{id}")]
-        public IActionResult GetCustomer([FromRoute] int id)
+        public CustomerViewModel GetCustomer([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var customer = customerMap.Read(id);
-
-            if (customer == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(customer);
+            return customerMap.Read(id);
         }
 
         // PUT: api/Customers/5

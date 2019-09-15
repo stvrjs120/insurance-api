@@ -90,7 +90,7 @@ namespace InsuranceAPI.Web.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            insuranceMap.Create(insurance);
+            insurance = insuranceMap.Create(insurance);
 
             return CreatedAtAction("GetInsurance", new { insurance.id }, insurance);
         }

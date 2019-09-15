@@ -4672,6 +4672,20 @@
           "bin/placeholder/InsuranceAPI.Repositories.dll": {}
         }
       },
+      "InsuranceAPI.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "InsuranceAPI.Interfaces": "1.0.0",
+          "InsuranceAPI.Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InsuranceAPI.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InsuranceAPI.Services.dll": {}
+        }
+      },
       "InsuranceAPI.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12611,6 +12625,11 @@
       "path": "../InsuranceAPI.Repositories/InsuranceAPI.Repositories.csproj",
       "msbuildProject": "../InsuranceAPI.Repositories/InsuranceAPI.Repositories.csproj"
     },
+    "InsuranceAPI.Services/1.0.0": {
+      "type": "project",
+      "path": "../InsuranceAPI.Services/InsuranceAPI.Services.csproj",
+      "msbuildProject": "../InsuranceAPI.Services/InsuranceAPI.Services.csproj"
+    },
     "InsuranceAPI.ViewModels/1.0.0": {
       "type": "project",
       "path": "../InsuranceAPI.ViewModels/InsuranceAPI.ViewModels.csproj",
@@ -12622,6 +12641,7 @@
       "InsuranceAPI.Maps >= 1.0.0",
       "InsuranceAPI.Models >= 1.0.0",
       "InsuranceAPI.Repositories >= 1.0.0",
+      "InsuranceAPI.Services >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12666,6 +12686,9 @@
             },
             "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj": {
               "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Repositories\\InsuranceAPI.Repositories.csproj"
+            },
+            "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Services\\InsuranceAPI.Services.csproj": {
+              "projectPath": "C:\\InsuranceApplication\\InsuranceAPI\\InsuranceAPI.Services\\InsuranceAPI.Services.csproj"
             }
           }
         }

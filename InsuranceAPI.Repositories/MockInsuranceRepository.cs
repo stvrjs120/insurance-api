@@ -8,11 +8,11 @@ namespace InsuranceAPI.Repositories
 {
     public class MockInsuranceRepository : IInsuranceRepository
     {
-        private List<Insurance> _insuranceList;
+        private List<Insurance> _insurancesList;
 
         public MockInsuranceRepository()
         {
-            _insuranceList = new List<Insurance>()
+            _insurancesList = new List<Insurance>()
             {
                 new Insurance() {
                     Id = 1,
@@ -55,18 +55,18 @@ namespace InsuranceAPI.Repositories
 
         public Insurance Create(Insurance insurance)
         {
-            insurance.Id = _insuranceList.Max(i => i.Id) + 1;
-            _insuranceList.Add(insurance);
+            insurance.Id = _insurancesList.Max(i => i.Id) + 1;
+            _insurancesList.Add(insurance);
             return insurance;
         }
 
         public bool Delete(int id)
         {
-            Insurance insurance = _insuranceList.FirstOrDefault(i => i.Id == id);
+            Insurance insurance = _insurancesList.FirstOrDefault(i => i.Id == id);
 
             if (insurance != null)
             {
-                _insuranceList.Remove(insurance);
+                _insurancesList.Remove(insurance);
 
                 return true;
             }
@@ -76,17 +76,17 @@ namespace InsuranceAPI.Repositories
 
         public IEnumerable<Insurance> List()
         {
-            return _insuranceList;
+            return _insurancesList;
         }
 
         public Insurance Read(int id)
         {
-            return _insuranceList.FirstOrDefault(i => i.Id == id);
+            return _insurancesList.FirstOrDefault(i => i.Id == id);
         }
 
         public bool Update(Insurance insuranceChanges)
         {
-            Insurance insurance = _insuranceList.FirstOrDefault(i => i.Id == insuranceChanges.Id);
+            Insurance insurance = _insurancesList.FirstOrDefault(i => i.Id == insuranceChanges.Id);
 
             if (insurance != null)
             {

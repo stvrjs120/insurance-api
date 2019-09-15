@@ -27,6 +27,7 @@
           "InsuranceAPI.Maps": "1.0.0",
           "InsuranceAPI.Models": "1.0.0",
           "InsuranceAPI.Repositories": "1.0.0",
+          "InsuranceAPI.Services": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -563,6 +564,18 @@
         },
         "compile": {
           "InsuranceAPI.Repositories.dll": {}
+        }
+      },
+      "InsuranceAPI.Services/1.0.0": {
+        "dependencies": {
+          "InsuranceAPI.Interfaces": "1.0.0",
+          "InsuranceAPI.Repositories": "1.0.0"
+        },
+        "runtime": {
+          "InsuranceAPI.Services.dll": {}
+        },
+        "compile": {
+          "InsuranceAPI.Services.dll": {}
         }
       },
       "InsuranceAPI.ViewModels/1.0.0": {
@@ -3722,6 +3735,11 @@
       "sha512": ""
     },
     "InsuranceAPI.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InsuranceAPI.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

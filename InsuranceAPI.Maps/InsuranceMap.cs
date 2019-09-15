@@ -9,7 +9,7 @@ namespace InsuranceAPI.Maps
 {
     public class InsuranceMap : IInsuranceMap
     {
-        private IInsuranceService insuranceService;
+        private readonly IInsuranceService insuranceService;
 
         public InsuranceMap(IInsuranceService service)
         {
@@ -47,17 +47,23 @@ namespace InsuranceAPI.Maps
 
         private InsuranceViewModel DomainToViewModel(Insurance domain)
         {
-            InsuranceViewModel model = new InsuranceViewModel();
-            model.id = domain.Id;
-            model.name = domain.Name;
-            model.description = domain.Description;
-            model.covering = domain.Covering;
-            model.validFrom = domain.ValidFrom;
-            model.coverageTime = domain.CoverageTime;
-            model.price = domain.Price;
-            model.riskLevel = domain.RiskLevel;
+            if (domain != null)
+            {
+                InsuranceViewModel model = new InsuranceViewModel();
+                model.id = domain.Id;
+                model.name = domain.Name;
+                model.description = domain.Description;
+                model.covering = domain.Covering;
+                model.validFrom = domain.ValidFrom;
+                model.coverageTime = domain.CoverageTime;
+                model.price = domain.Price;
+                model.riskLevel = domain.RiskLevel;
 
-            return model;
+                return model;
+            } else
+            {
+                return null;
+            }
         }
 
         private List<InsuranceViewModel> DomainToViewModel(IEnumerable<Insurance> domain)

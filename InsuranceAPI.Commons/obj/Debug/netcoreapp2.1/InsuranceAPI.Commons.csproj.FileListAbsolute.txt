@@ -1,7 +1,6 @@
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\bin\Debug\netcoreapp2.1\InsuranceAPI.Commons.deps.json
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\bin\Debug\netcoreapp2.1\InsuranceAPI.Commons.dll
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\bin\Debug\netcoreapp2.1\InsuranceAPI.Commons.pdb
-C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\obj\Debug\netcoreapp2.1\InsuranceAPI.Commons.csprojAssemblyReference.cache
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\obj\Debug\netcoreapp2.1\InsuranceAPI.Commons.csproj.CoreCompileInputs.cache
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\obj\Debug\netcoreapp2.1\InsuranceAPI.Commons.AssemblyInfoInputs.cache
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Commons\obj\Debug\netcoreapp2.1\InsuranceAPI.Commons.AssemblyInfo.cs

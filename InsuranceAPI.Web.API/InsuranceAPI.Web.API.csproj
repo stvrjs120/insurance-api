@@ -18,6 +18,7 @@
     <ProjectReference Include="..\InsuranceAPI.Maps\InsuranceAPI.Maps.csproj" />
     <ProjectReference Include="..\InsuranceAPI.Models\InsuranceAPI.Models.csproj" />
     <ProjectReference Include="..\InsuranceAPI.Repositories\InsuranceAPI.Repositories.csproj" />
+    <ProjectReference Include="..\InsuranceAPI.Services\InsuranceAPI.Services.csproj" />
   </ItemGroup>
 
 </Project>

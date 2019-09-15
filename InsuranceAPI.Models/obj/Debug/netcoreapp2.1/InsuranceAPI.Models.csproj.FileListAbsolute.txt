@@ -3,7 +3,6 @@ C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\bin\Debug\netcoreapp2.1
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\obj\Debug\netcoreapp2.1\InsuranceAPI.Models.csproj.CoreCompileInputs.cache
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\obj\Debug\netcoreapp2.1\InsuranceAPI.Models.AssemblyInfoInputs.cache
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\obj\Debug\netcoreapp2.1\InsuranceAPI.Models.AssemblyInfo.cs
-C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\obj\Debug\netcoreapp2.1\InsuranceAPI.Models.csprojAssemblyReference.cache
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\bin\Debug\netcoreapp2.1\InsuranceAPI.Models.pdb
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\obj\Debug\netcoreapp2.1\InsuranceAPI.Models.dll
 C:\InsuranceApplication\InsuranceAPI\InsuranceAPI.Models\obj\Debug\netcoreapp2.1\InsuranceAPI.Models.pdb

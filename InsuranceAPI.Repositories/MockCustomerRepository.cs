@@ -12,10 +12,49 @@ namespace InsuranceAPI.Repositories
         private List<CustomerInsurance> _customerInsurancesList;
         private List<Insurance> _insurancesList;
 
-        public MockCustomerRepository(List<CustomerInsurance> customerInsurances, List<Insurance> insurances)
+        public MockCustomerRepository()
         {
-            _customerInsurancesList = customerInsurances;
-            _insurancesList = insurances;
+            _customerInsurancesList = new List<CustomerInsurance>();
+
+            _insurancesList = new List<Insurance>()
+            {
+                new Insurance() {
+                    Id = 1,
+                    Name = "Seguro Familiar",
+                    Description = "Seguro cubre hijos y conyugue",
+                    Covering = Models.Enums.Covering.Incendio,
+                    ValidFrom = new DateTime(2019, 03, 14),
+                    CoverageTime = 8,
+                    Price = 120,
+                    RiskLevel = Models.Enums.RiskLevel.MedioAlto,
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now
+                },
+                new Insurance() {
+                    Id = 2,
+                    Name = "Seguro Viajes",
+                    Description = "Seguro para viajes al extrangero",
+                    Covering = Models.Enums.Covering.Robo,
+                    ValidFrom = new DateTime(2019, 03, 14),
+                    CoverageTime = 8,
+                    Price = 160,
+                    RiskLevel = Models.Enums.RiskLevel.Medio,
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now
+                },
+                new Insurance() {
+                    Id = 3,
+                    Name = "Seguro Vivienda",
+                    Description = "Seguro para daños a la vivienda",
+                    Covering = Models.Enums.Covering.Incendio,
+                    ValidFrom = new DateTime(2019, 03, 14),
+                    CoverageTime = 8,
+                    Price = 70,
+                    RiskLevel = Models.Enums.RiskLevel.MedioAlto,
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now
+                }
+            };
 
             _customersList = new List<Customer>()
             {
@@ -23,7 +62,7 @@ namespace InsuranceAPI.Repositories
                 {
                     Id = 1,
                     Name = "Los Pollos Hermanos",
-                    CustomerInsurances = null,
+                    CustomerInsurances = new List<CustomerInsurance> { new CustomerInsurance { CustomerID = 1, InsuranceID = 2 }, new CustomerInsurance  { CustomerID = 1, InsuranceID = 3 } },
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now
                 },
@@ -31,7 +70,7 @@ namespace InsuranceAPI.Repositories
                 {
                     Id = 2,
                     Name = "Carlos Urbina",
-                    CustomerInsurances = null,
+                    CustomerInsurances = new List<CustomerInsurance> { new CustomerInsurance { CustomerID = 2, InsuranceID = 3 } },
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now
                 }
